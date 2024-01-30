@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" wp-site wp-site-is-master-page>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Start your development with Dorang landing page.">
+        <meta name="author" content="Devcrud">
+        <title>Dorang | Free Bootstrap 4.3.x template</title>
+        <style>#myInput { display: none; } #searchInput { display: none; } #B1 { display: block; }
+        #button { display: none; } #lestmy { display: none; } #myHeading { display: block; }
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+        </style>
+        <!-- font icons -->
+        <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+        <!-- Bootstrap + Dorang main styles -->
+        <link rel="stylesheet" href="assets/css/dorang.css">
+        <link rel="stylesheet" href="../components/pg.blocks/css/blocks.css">
+        <link rel="stylesheet" href="../components/pg.blocks/css/plugins.css">
+        <link rel="stylesheet" href="../components/pg.blocks/css/style-library-1.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+        <!-- page navbar -->
+        <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+            <ul class="nav-navbar container">
+                <li class="nav-item">
+                    <img src=".\assets\imgs\LOGO.png" href="#" class="nav-link">
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Journal</a>
+                </li>
+                <li class="nav-item search">
+                    <a href="javascript:void(0)" class="nav-link search-toggle"><i class="ti-search"></i> Search</a>
+                    <div class="search-wrapper">
+                        <form>
+                            <input type="search" class="form-control" name="" placeholder="hit enter to search">
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- end of page navbar -->
+        <div class="theme-selector">
+            <a href="javascript:void(0)" class="spinner"> <i class="ti-paint-bucket"></i> </a>
+            <div class="body">
+                <a href="javascript:void(0)" class="light"></a>
+                <a href="javascript:void(0)" class="dark"></a>
+            </div>
+        </div>         
+        <!-- page header -->
+        <header class="header">
+            <div class="overlay"></div>
+            <div class="header-content">
+                <h1  class="header-title" id="myHeading">عن أي راوي سوف تحدث؟</h1>
+                <ul id="B1" class="header-subtitle" style="color: #ffffff;">موقع حدثنا للتراجم الرواة و البحث عن صحة الأحداديث</ul>
+                <div class="container">
+                    <div class="searchInput">
+                        <div class="resultBox" id="names">
+                            <!-- here list are inserted from javascript -->
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" placeholder="أسم الراوي..." class="form-control" id="searchInput" oninput="searchOpgcts()">
+                    <div id="lestmy" class="card bg-light mb-3">
+                        <div class="card-header text-black-50">
+                            <h5 class="card-header text-body">
+                            :النتائج </h5>
+                        </div>
+                        <div id="resultsContainer" class="card-body">
+                            <ul class="font-italic card-title text-white border-light" id="resultsList"></ul>
+                        </div>                         
+                    </div>
+                </div>
+                <button type="button" class="btn btn-dark" id="myButton" onclick="toggleInput()">البدء</button>
+           
+                
+
+    </div>
+</header><div id="container">
+
+                    
+                </div>
+        <!-- end of page header -->
+        <!-- modal -->
+        <div class="modalBox">
+            <div class="modalBox-body">
+                <iframe width="100%" height="450px" class="border-0" src="https://www.youtube.com/embed/tgbNyZ7vqY?controls=0">
+</iframe>
+            </div>             
+        </div>
+        <!-- end of modal -->
+        <!-- page container -->         
+        <!-- end of page container -->
+        <!--footer & pre footer -->
+        <div class="contact-section">
+            <div class="overlay"></div>
+            <!-- container -->
+            <div class="container">
+                <div class="col-md-10 col-lg-8 m-auto">
+                    <h6 class="title mb-2">Contact Us</h6>
+                    <p class="mb-5">Feel Free To Drop Us A Line.</p>
+                    <form action="" class="form-group">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="email" class="form-control" placeholder="Enter Email" equried>
+                        <textarea name="comment" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
+                        <input type="submit" value="Send Message" class="form-control">
+                    </form>
+                </div>
+                <!-- footer -->
+                <footer class="footer">
+                    <p class="infos">&copy; <script>document.write(new Date().getFullYear())</script>, Made with <i class="ti-heart text-danger"></i> by <a href="http://www.devcrud.com">DevCRUD</a></p> 
+                    <span>|</span> 
+                    <div class="links">
+                        <a href="#">About</a>
+                        <a href="#">Explore</a>
+                        <a href="#">Journal</a>
+                    </div>
+                </footer>
+                <!-- end of footer -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of pre footer -->
+        <!-- core  -->
+        <script>
+ function toggleInput() {
+    document.getElementById("B1").style.display = "none";
+
+    document.getElementById("myHeading").style.display = "none";
+    document.getElementById("lestmy").style.display = "block";
+    document.getElementById("searchInput").style.display = "block";
+  document.getElementById("myButton").style.display = "none";
+}
+let A1 = {
+  
+    name: "محمد بن اسماعيل البخاري",
+    born : 194, 
+    Died: 256,
+    lived_in: ["واسط","دمشق","المدينة","عسقلان","العراق","بلخ","نيسابور","قيسارية","حمص","الحجاز","مرو","البصرة","بغداد","الشام","بخارى","مصر","خراسان","الكوفة","مكة"],
+    Url:"https://hadith.islam-db.com/narrators/6817/%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A5%D8%B3%D9%85%D8%A7%D8%B9%D9%8A%D9%84-%D8%A8%D9%86-%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85-%D8%A8%D9%86-%D8%A7%D9%84%D9%85%D8%BA%D9%8A%D8%B1%D8%A9-%D8%A8%D9%86-%D8%A8%D8%B0%D8%AF%D8%B2%D8%A8%D8%A9",
+    Evaluation : "امام"
+};
+let A2 = {
+  
+  name: "مكي بن إبراهيم الحنظلي",
+  born : 126, 
+  Died: 214,
+  lived_in: ["بلخ","بغداد"],
+  Url:"https://hadith.islam-db.com/narrators/7660/%D9%85%D9%83%D9%8A-%D8%A8%D9%86-%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85-%D8%A8%D9%86-%D8%A8%D8%B4%D9%8A%D8%B1-%D8%A8%D9%86-%D9%81%D8%B1%D9%82%D8%AF",
+  Evaluation : "ثقة"
+};
+
+let A3 = {
+  
+  name: "يزيد بن أبي عبيد الأسلمي",
+  born : NaN, 
+  Died: 146,
+  lived_in: ["المدينة","الحجاز"],
+  Url:"https://hadith.islam-db.com/narrators/8376/%D9%8A%D8%B2%D9%8A%D8%AF-%D8%A8%D9%86-%D8%A3%D8%A8%D9%8A-%D8%B9%D8%A8%D9%8A%D8%AF",
+  Evaluation : "ثقة"
+};
+
+
+  // قائمة ببعض النتائج التي يمكن استبدالها بالنتائج الفعلية من خوادمك
+  const opgctsResults = [
+            { id: 1, title: A1.name },
+            { id: 2, title: A2.name },
+            { id: 3, title: A3.name }
+        ];
+
+        function searchOpgcts() {
+            // الحصول على قيمة البحث
+            const searchTerm = document.getElementById("searchInput").value;
+
+            // البحث في النتائج المزيفة (يمكن استبدالها بطلب إلى خوادمك)
+            const results = opgctsResults.filter(result => result.title.includes(searchTerm));
+
+            // عرض النتائج في قائمة
+            displayResults(results);
+        }
+
+        function displayResults(results) {
+            const resultsList = document.getElementById("resultsList");
+
+            // مسح النتائج السابقة
+            resultsList.innerHTML = "";
+
+            // إضافة كل نتيجة كعنصر قائمة قابل للنقر
+            results.forEach(result => {
+                const listItem = document.createElement("li");
+                listItem.textContent = result.title;
+                listItem.addEventListener("click", () => showAlert(result.title));
+                resultsList.appendChild(listItem);
+            });
+        }
+        var boxCounter = 0;
+
+        function showAlert(resultTitle) {
+            alert(`تم اختيار: ${resultTitle}`);
+            var newBox = document.createElement("div");
+    newBox.className = "box";
+    newBox.id = "box" + boxCounter;
+    boxCounter++;
+    newBox.textContent = resultTitle;
+    document.getElementById("container").appendChild(newBox);
+
+        }
+
+
+</script>
+        <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+        <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+        <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+        <script src="assets/js/dorang.js"></script>
+        <script type="text/javascript" src="../components/pg.blocks/js/plugins.js"></script>
+        <script type="text/javascript" src="../components/pg.blocks/js/bskit-scripts.js"></script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    </body>
+</html>
